@@ -1,0 +1,48 @@
+tipo numero;
+tipo letra;
+tipo letras;
+
+precio se filtra por numero;
+talla se filtra por letra;
+color se filtra por letras;
+
+categoria Linio{
+	subCategoria Ropa;
+	subCategoria Tecnologia;
+} 
+
+categoria Tecnologia{
+	subCategoria Celulares;
+	subCategoria Computadores;
+}
+
+categoriaComputadores{
+	filtro precio;
+}
+
+categoria Celulares{
+	subCategoria LG;
+	filtro precio;
+}
+
+categoria LG{
+	filtro precio;
+	filtro color;
+}
+
+categoria Ropa{
+	subCategoria Hombre;
+	subCategoria Mujer;
+}
+
+categoria Mujer{
+	filtro color;
+	filtro talla;
+	filtro precio;
+}
+
+categoria Hombre{
+	filtro color;
+	filtro talla;
+	filtro precio;
+}
