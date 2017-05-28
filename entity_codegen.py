@@ -39,13 +39,21 @@ def main(debug=False):
     #jinja_env.filters['javatype'] = javatype
 
      # Load template
-    template = jinja_env.get_template('editar.template')
+    template = jinja_env.get_template('vista.template')
 
     for categoria in modelo_tienda.categorias:
         # For each entity generate java file
         with open(join(vistaHTML_folder,
                        "%s.html" % categoria.name), 'w') as f:
             f.write(template.render(categoria=categoria))
+
+    template = jinja_env.get_template('estilos.template')
+
+    for categoria in modelo_tienda.categorias:
+        # For each entity generate java file
+        with open(join(vistaHTML_folder,
+                       "%s_estilo.css" % categoria.name), 'w') as f:
+            f.write(template.render(categoria=categoria))		
 
  
 

@@ -10,6 +10,7 @@ EComerce:
 
 Categoria:
     'categoria' name=ID '{'
+	colores=Colores
         contenidoCategorias+=contenidoCategoria
     '}'
 ;
@@ -41,5 +42,12 @@ TipoSimple:
     'tipo' name=ID ';'
 ;
 
+Colores:
+	'Color banner' banner=Color ';' 
+	'Color letra' letra=Color ';' 
+;
+Color:
+    name=ID
+;
 
 

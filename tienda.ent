@@ -3,46 +3,62 @@ tipo letra;
 tipo letras;
 
 precio se filtra por numero;
-talla se filtra por letra;
+talla se filtra por letra;	
 color se filtra por letras;
 
 categoria Linio{
+	Color banner orange;
+	Color letra black;
 	subCategoria Ropa;
 	subCategoria Tecnologia;
 } 
 
 categoria Tecnologia{
+	Color banner gray;
+	Color letra black;
 	subCategoria Celulares;
 	subCategoria Computadores;
 }
 
 categoriaComputadores{
+	Color banner black;
+	Color letra white;
 	filtro precio;
 }
 
 categoria Celulares{
+	Color banner red;
+	Color letra black;
 	subCategoria LG;
 	filtro precio;
 }
 
 categoria LG{
+	Color banner red;
+	Color letra black;
 	filtro precio;
 	filtro color;
 }
 
 categoria Ropa{
+	Color banner yellow;
+	Color letra black;
 	subCategoria Hombre;
 	subCategoria Mujer;
 }
 
 categoria Mujer{
+	Color banner yellow;
+	Color letra black;
 	filtro color;
 	filtro talla;
 	filtro precio;
 }
 
 categoria Hombre{
+	Color banner yellow;
+	Color letra black;
 	filtro color;
 	filtro talla;
 	filtro precio;
-}
+} 
