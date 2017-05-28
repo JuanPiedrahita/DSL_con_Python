@@ -2,8 +2,8 @@ body{
   background-color: F7F7F7;
   font-family: "Tahoma", "geneva", sans-serif;
 }
-#titular{
-  background-color: yellow;
+#estilo_ropa{
+  background-color: blue;
   height: 200px;
   color: white;
 }
@@ -20,7 +20,7 @@ body{
   float: right;
 }
 #filtros{
-  color: yellow;
+  color: blue;
 }
 #menu_inicio{
   float:left;
@@ -71,7 +71,7 @@ body{
   text-align: center;
 }
 #contacto{
-  background-color: yellow;
+  background-color: blue;
   height: 100px;
   text-align: center;
   color: white;

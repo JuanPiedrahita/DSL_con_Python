@@ -6,58 +6,65 @@ precio se filtra por numero;
 talla se filtra por letra;	
 color se filtra por letras;
 
-categoria Linio{
+estilo home{
 	Color banner orange;
 	Color letra black;
+}
+
+estilo estilo_tecnologia{
+	Color banner gray;
+	Color letra black;
+}
+
+estilo estilo_ropa{
+	Color banner blue;
+	Color letra black;
+}
+
+categoria Linio{ 
+	estilo home;
 	subCategoria Ropa;
 	subCategoria Tecnologia;
 } 
 
 categoria Tecnologia{
-	Color banner gray;
-	Color letra black;
+	estilo estilo_tecnologia;
 	subCategoria Celulares;
 	subCategoria Computadores;
 }
 
 categoriaComputadores{
-	Color banner black;
-	Color letra white;
+	estilo estilo_tecnologia;
 	filtro precio;
 }
 
 categoria Celulares{
-	Color banner red;
-	Color letra black;
+	estilo estilo_tecnologia;
 	subCategoria LG;
 	filtro precio;
 }
 
 categoria LG{
-	Color banner red;
-	Color letra black;
+	estilo estilo_tecnologia;
 	filtro precio;
 	filtro color;
 }
 
 categoria Ropa{
-	Color banner yellow;
-	Color letra black;
+	estilo estilo_ropa;
 	subCategoria Hombre;
 	subCategoria Mujer;
 }
 
 categoria Mujer{
-	Color banner yellow;
-	Color letra black;
+	estilo estilo_ropa;
 	filtro color;
 	filtro talla;
 	filtro precio;
 }
 
 categoria Hombre{
-	Color banner yellow;
-	Color letra black;
+	estilo estilo_ropa;
 	filtro color;
 	filtro talla;
 	filtro precio;

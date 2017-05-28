@@ -4,13 +4,20 @@
 
 EComerce:   
     tipos+=TipoSimple   
-    filtros+=Filtro                  
+    filtros+=Filtro      
+    estilos+=Estilo	            
     categorias+=Categoria      
+;
+
+Estilo:
+    'estilo' name=ID '{'
+	contenidoEstilos=contenidoEstilo
+     '}'	
 ;
 
 Categoria:
     'categoria' name=ID '{'
-	colores=Colores
+       'estilo' estilo=[Estilo] ';'
         contenidoCategorias+=contenidoCategoria
     '}'
 ;
@@ -42,11 +49,14 @@ TipoSimple:
     'tipo' name=ID ';'
 ;
 
-Colores:
-	'Color banner' banner=Color ';' 
-	'Color letra' letra=Color ';' 
+
+
+contenidoEstilo:
+	'Color banner' banner=Caracteristica ';' 
+	'Color letra' letra=Caracteristica ';' 
 ;
-Color:
+
+Caracteristica:
     name=ID
 ;
 

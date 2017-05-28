@@ -2,8 +2,8 @@ body{
   background-color: F7F7F7;
   font-family: "Tahoma", "geneva", sans-serif;
 }
-#titular{
-  background-color: black;
+#estilo_tecnologia{
+  background-color: gray;
   height: 200px;
   color: white;
 }
@@ -20,13 +20,13 @@ body{
   float: right;
 }
 #filtros{
-  color: black;
+  color: gray;
 }
 #menu_inicio{
   float:left;
   margin: 5px;
   text-decoration:none;
-   color: white;
+   color: black;
 }
 #relleno{
   height: 300px;
@@ -71,7 +71,7 @@ body{
   text-align: center;
 }
 #contacto{
-  background-color: black;
+  background-color: gray;
   height: 100px;
   text-align: center;
   color: white;
